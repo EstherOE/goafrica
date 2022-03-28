@@ -261,9 +261,8 @@ GameObject:
   - component: {fileID: 9089053540818546640}
   - component: {fileID: 9089053540818546647}
   - component: {fileID: 9089053540818546646}
-  - component: {fileID: 3510973545650829221}
   m_Layer: 0
-  m_Name: BigLane (1)
+  m_Name: BigLane withooutCoins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -367,22 +366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d2f50a8e0bb841a5aaa90ae55db8849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3510973545650829221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9089053540818546645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b792b968a6a1741909728712a91ce9fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coins: {fileID: 5744735049070109973, guid: 9febe19e3bfc846a6876b363a41795c9, type: 3}
-  position: {fileID: 5092499955487476846}
-  numbertoSpawn: 3
-  radius: 5
 --- !u!1001 &57466049444748530
 PrefabInstance:
   m_ObjectHideFlags: 0
