@@ -121,6 +121,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &255494766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 255494767}
+  m_Layer: 0
+  m_Name: PlatfromDestroyPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &255494767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255494766}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.7200012, y: -3.0496864, z: -106.3}
+  m_LocalScale: {x: 28.699999, y: 3.16, z: 44.14}
+  m_Children: []
+  m_Father: {fileID: 543450652549377384}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &268442921
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +164,7 @@ GameObject:
   - component: {fileID: 268442924}
   - component: {fileID: 268442923}
   - component: {fileID: 268442922}
+  - component: {fileID: 268442927}
   m_Layer: 0
   m_Name: BigLane
   m_TagString: Untagged
@@ -227,6 +258,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &268442927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268442921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eec6851b09204e5fa3af2205368c30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformDestructionPoint: {fileID: 0}
 --- !u!1 &451910392
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,10 +1025,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  speedMultiplier: 1.05
+  speedIncreasesMileStones: 100
   change: {x: 0, y: 0, z: 0}
   horizontalMultipler: 2
   horizontalInput: 0
-  horizontalSpeed: 23
+  horizontalSpeed: 8
 --- !u!1 &1651062039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,6 +1270,7 @@ Transform:
   - {fileID: 1651062042}
   - {fileID: 451910393}
   - {fileID: 543450651909291299}
+  - {fileID: 255494767}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1490,6 +1537,7 @@ GameObject:
   - component: {fileID: 4267953944773674392}
   - component: {fileID: 4267953944773674399}
   - component: {fileID: 4267953944773674398}
+  - component: {fileID: 4267953944773674400}
   m_Layer: 0
   m_Name: BigLane (3)
   m_TagString: Untagged
@@ -1522,6 +1570,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4267953944773674400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4267953944773674397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eec6851b09204e5fa3af2205368c30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformDestructionPoint: {fileID: 0}
 --- !u!4 &4267953945812878096
 Transform:
   m_ObjectHideFlags: 0
@@ -1620,6 +1681,7 @@ GameObject:
   - component: {fileID: 4267953945812878099}
   - component: {fileID: 4267953945812878098}
   - component: {fileID: 4267953945812878101}
+  - component: {fileID: 4267953945812878104}
   - component: {fileID: 4267953945812878100}
   m_Layer: 0
   m_Name: BigLane (1)
@@ -1628,6 +1690,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4267953945812878104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4267953945812878103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eec6851b09204e5fa3af2205368c30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformDestructionPoint: {fileID: 0}
 --- !u!33 &4331713305051344507
 MeshFilter:
   m_ObjectHideFlags: 0
