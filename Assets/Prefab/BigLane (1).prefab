@@ -262,6 +262,7 @@ GameObject:
   - component: {fileID: 9089053540818546647}
   - component: {fileID: 9089053540818546646}
   - component: {fileID: 3510973545650829221}
+  - component: {fileID: 4964819814201231323}
   m_Layer: 0
   m_Name: BigLane (1)
   m_TagString: Untagged
@@ -383,6 +384,19 @@ MonoBehaviour:
   position: {fileID: 5092499955487476846}
   numbertoSpawn: 3
   radius: 5
+--- !u!114 &4964819814201231323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9089053540818546645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eec6851b09204e5fa3af2205368c30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platformDestructionPoint: {fileID: 0}
 --- !u!1001 &57466049444748530
 PrefabInstance:
   m_ObjectHideFlags: 0
