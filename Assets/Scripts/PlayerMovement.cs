@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
 
     public float speedMultiplier;
-    public float speedIncreasesMileStones;
+    public float speedIncreasesMileStone;
     private float speeedMilestoneCount;
     public Vector3 change;
     public float horizontalMultipler = 2;
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         body = GetComponent<Rigidbody>();
 
-        speeedMilestoneCount = speedIncreasesMileStones;
+        speeedMilestoneCount = speedIncreasesMileStone;
     }
     // Update is called once per frame
     void Update()
@@ -37,8 +37,8 @@ public class PlayerMovement : MonoBehaviour
         if(transform.position.z >speeedMilestoneCount)
         {
 
-            speeedMilestoneCount += speedIncreasesMileStones;
-            speedIncreasesMileStones = speedIncreasesMileStones * speedMultiplier;
+            speeedMilestoneCount += speedIncreasesMileStone;
+            speedIncreasesMileStone = speedIncreasesMileStone * speedMultiplier;
             horizontalSpeed  =horizontalSpeed* speedMultiplier;
 
         }
