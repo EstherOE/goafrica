@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using UnityStandardAssets.CrossPlatformInput;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody body;
@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Movement()
     {
-        if (Input.GetKey(KeyCode.A) || (Input.GetKey(KeyCode.LeftArrow)))
+        if (CrossPlatformInputManager.GetButtonDown("leftButton"))//(Input.GetKey(KeyCode.A) || (Input.GetKey(KeyCode.LeftArrow)))
         {
             if (this.gameObject.transform.position.x > Boundary.BInstance.leftSide)
             {
@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.D) || (Input.GetKey(KeyCode.RightArrow)))
+        if (CrossPlatformInputManager.GetButtonDown("rightButton"))//(Input.GetKey(KeyCode.D) || (Input.GetKey(KeyCode.RightArrow)))
         {
             if (this.gameObject.transform.position.x < Boundary.BInstance.rightSide)
             {
