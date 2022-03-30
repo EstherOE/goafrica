@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -16,11 +17,17 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float horizontalSpeed = 3;
     private bool isGameStarted = false;
 
-
+ 
+    public static bool gameOver;
+    public GameObject gameOverPanel;
 
     // Start is called before the first frame update
     void Start()
     {
+        gameOver = false;
+
+        Time.timeScale = 1;
+
         body = GetComponent<Rigidbody>();
 
         speeedMilestoneCount = speedIncreasesMileStones;
@@ -28,10 +35,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
         Movement();
     }
+
     private void FixedUpdate()
     {
         if (transform.position.z > speeedMilestoneCount)
@@ -65,6 +71,15 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Obstacle")) 
+        {
+           gameOver = true;
+           Time.timeScale = 0;
+           gameOverPanel.SetActive(true);
+        }
+    }
 
     public void StartRunning()
     {
