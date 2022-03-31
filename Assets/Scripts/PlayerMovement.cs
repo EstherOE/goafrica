@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityStandardAssets.CrossPlatformInput; 
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -50,8 +51,9 @@ public class PlayerMovement : MonoBehaviour
         }
 
         transform.Translate(Vector3.forward * Time.deltaTime * horizontalSpeed, Space.World);
-    }
 
+    }
+   
     void Movement()
     {
         if (Input.GetKey(KeyCode.A) || (Input.GetKey(KeyCode.LeftArrow)))
