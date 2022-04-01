@@ -4665,6 +4665,8 @@ MonoBehaviour:
   distanceBetweenMax: 22.01
   thePlatforms:
   - {fileID: 9089053540818546645, guid: ffcea321c96d541e0bbc85cddbb02e1f, type: 3}
+  - {fileID: 9089053540818546645, guid: ac4f98eff3c234b3ebd06c768697b645, type: 3}
+  - {fileID: 9089053540818546645, guid: d0ea6ebedadcf49fa9c43d6e6dfc5a4f, type: 3}
   - {fileID: 8150346601759856019, guid: 4bb830e5f3b7f40cc8ce7c103bac74e0, type: 3}
   displayRandom: 0
 --- !u!1 &914612814
