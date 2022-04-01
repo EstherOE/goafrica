@@ -26,14 +26,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096933303708904033}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.2, y: 1.34, z: 0.22}
-  m_LocalScale: {x: 0.0866841, y: 1.1297076, z: 0.4820252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.05, y: 1.34, z: 0.145}
+  m_LocalScale: {x: 0.19414045, y: 1.1297076, z: 0.19186823}
   m_Children:
   - {fileID: 3327069744739111419}
   m_Father: {fileID: 8150346601759856020}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1096933303708904044
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 8150346601759856016}
   - component: {fileID: 4538610957772908789}
   m_Layer: 0
-  m_Name: BigLane withOneCrodile
+  m_Name: BigLane withOneCrodile 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -360,7 +360,7 @@ Transform:
   m_GameObject: {fileID: 8150346601759856019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -15.1, y: -4.2, z: -74}
-  m_LocalScale: {x: 24.087, y: 1.58, z: 62.146126}
+  m_LocalScale: {x: 24.087, y: 1.58, z: 136.37346}
   m_Children:
   - {fileID: 6443981992648668762}
   - {fileID: 1933062341565292882}

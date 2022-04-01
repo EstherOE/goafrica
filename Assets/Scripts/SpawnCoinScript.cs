@@ -22,7 +22,7 @@ public class SpawnCoinScript : MonoBehaviour
             Vector3 pos = position.position + new Vector3(xfirst, 0, xsecond);
 
             float angleDegrees = -angle * Mathf.Rad2Deg;
-            Quaternion rot = Quaternion.Euler(0, angleDegrees, 0);
+            Quaternion rot = Quaternion.Euler(90, angleDegrees, 0);
             Instantiate(coins,pos,rot);
         }
 
