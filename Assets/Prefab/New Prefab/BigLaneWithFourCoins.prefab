@@ -4023,8 +4023,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coins: {fileID: 5744735049070109973, guid: ee4b712dfa0c84c6ca593b8facc1b1b2, type: 3}
   position: {fileID: 5092499955487476846}
-  numbertoSpawn: 4
-  radius: 3
+  numbertoSpawn: 2
+  radius: 1
 --- !u!1001 &66312453360712349
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -309,6 +309,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoutBoat
       objectReference: {fileID: 0}
+    - target: {fileID: 2468214695573800246, guid: e505ad6aa92b701429ccea3dac7fece1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2957471447232225164, guid: e505ad6aa92b701429ccea3dac7fece1,
         type: 3}
       propertyPath: m_RootOrder
@@ -3254,7 +3259,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300054, guid: e1a536f74c7ef384a8d7132148ace0c8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b0ed7f8baba014af29e553acfbc8ca4e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3963,6 +3968,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodBoat
       objectReference: {fileID: 0}
+    - target: {fileID: 2468214695573800246, guid: e505ad6aa92b701429ccea3dac7fece1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2957471447232225164, guid: e505ad6aa92b701429ccea3dac7fece1,
         type: 3}
       propertyPath: m_RootOrder
@@ -4147,6 +4157,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpeedBoat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468214695573800246, guid: e505ad6aa92b701429ccea3dac7fece1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2957471447232225164, guid: e505ad6aa92b701429ccea3dac7fece1,
         type: 3}
@@ -4651,37 +4666,6 @@ MonoBehaviour:
   thePlatforms:
   - {fileID: 9089053540818546645, guid: ffcea321c96d541e0bbc85cddbb02e1f, type: 3}
   - {fileID: 8150346601759856019, guid: 4bb830e5f3b7f40cc8ce7c103bac74e0, type: 3}
-  - {fileID: 8150346601759856019, guid: 6f06e6c3f928243a8a8cc6980d66b0d7, type: 3}
-  - {fileID: 9089053540818546645, guid: 8ae15c6dab32f4d778d285c8d20bc9fb, type: 3}
-  - {fileID: 8150346601759856019, guid: 43aea169e1fe741948d3c80efa01c52d, type: 3}
-  - {fileID: 8150346601759856019, guid: 350c7e51b0db545279ddff2762f178c3, type: 3}
-  - {fileID: 9089053540818546645, guid: 70872409aeaac45b3b1a4ecbd853f8c0, type: 3}
-  - {fileID: 9089053540818546645, guid: 8ae15c6dab32f4d778d285c8d20bc9fb, type: 3}
-  - {fileID: 8150346601759856019, guid: a662af8b52f914033b130e4411b95580, type: 3}
-  - {fileID: 9089053540818546645, guid: 766d8425fc4054a58bc57aad4523a8f5, type: 3}
-  - {fileID: 9089053540818546645, guid: 766d8425fc4054a58bc57aad4523a8f5, type: 3}
-  - {fileID: 9089053540818546645, guid: 9c1a63000746a4cddb938e7d92744681, type: 3}
-  - {fileID: 9089053540818546645, guid: 9c1a63000746a4cddb938e7d92744681, type: 3}
-  - {fileID: 9089053540818546645, guid: 27e881f63ae8f4f0a9c45da51ec7f7ee, type: 3}
-  - {fileID: 9089053540818546645, guid: 34cf22adefe9b46c98298f1ae4914bf9, type: 3}
-  - {fileID: 8150346601759856019, guid: b833a11c47c4c423ca375e5a52e8d386, type: 3}
-  - {fileID: 9089053540818546645, guid: ffcea321c96d541e0bbc85cddbb02e1f, type: 3}
-  - {fileID: 8150346601759856019, guid: 4bb830e5f3b7f40cc8ce7c103bac74e0, type: 3}
-  - {fileID: 8150346601759856019, guid: 6f06e6c3f928243a8a8cc6980d66b0d7, type: 3}
-  - {fileID: 8150346601759856019, guid: a662af8b52f914033b130e4411b95580, type: 3}
-  - {fileID: 9089053540818546645, guid: ffcea321c96d541e0bbc85cddbb02e1f, type: 3}
-  - {fileID: 9089053540818546645, guid: ffcea321c96d541e0bbc85cddbb02e1f, type: 3}
-  - {fileID: 8150346601759856019, guid: 6f06e6c3f928243a8a8cc6980d66b0d7, type: 3}
-  - {fileID: 8150346601759856019, guid: 350c7e51b0db545279ddff2762f178c3, type: 3}
-  - {fileID: 9089053540818546645, guid: 70872409aeaac45b3b1a4ecbd853f8c0, type: 3}
-  - {fileID: 9089053540818546645, guid: 8ae15c6dab32f4d778d285c8d20bc9fb, type: 3}
-  - {fileID: 8150346601759856019, guid: a662af8b52f914033b130e4411b95580, type: 3}
-  - {fileID: 9089053540818546645, guid: 766d8425fc4054a58bc57aad4523a8f5, type: 3}
-  - {fileID: 9089053540818546645, guid: 9c1a63000746a4cddb938e7d92744681, type: 3}
-  - {fileID: 9089053540818546645, guid: 27e881f63ae8f4f0a9c45da51ec7f7ee, type: 3}
-  - {fileID: 9089053540818546645, guid: 34cf22adefe9b46c98298f1ae4914bf9, type: 3}
-  - {fileID: 8150346601759856019, guid: b833a11c47c4c423ca375e5a52e8d386, type: 3}
-  - {fileID: 9089053540818546645, guid: ffcea321c96d541e0bbc85cddbb02e1f, type: 3}
   displayRandom: 0
 --- !u!1 &914612814
 GameObject:
@@ -7142,7 +7126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1c4221cbf1a4c28bd987751928690b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 12
   speedMultiplier: 1.05
   speedIncreasesMileStones: 100
   change: {x: 0, y: 0, z: 0}
