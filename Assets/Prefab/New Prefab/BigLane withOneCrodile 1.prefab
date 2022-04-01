@@ -1633,17 +1633,52 @@ PrefabInstance:
     - target: {fileID: 6568563843206816891, guid: 52b07c38abc38411c812239c06bc550e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 47.1
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 6568563843206816891, guid: 52b07c38abc38411c812239c06bc550e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 32.3
+      value: -13.1
       objectReference: {fileID: 0}
     - target: {fileID: 6568563843206816891, guid: 52b07c38abc38411c812239c06bc550e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 11.6
+      value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568563843206816891, guid: 52b07c38abc38411c812239c06bc550e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7184977
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568563843206816891, guid: 52b07c38abc38411c812239c06bc550e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.13216223
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568563843206816891, guid: 52b07c38abc38411c812239c06bc550e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2800802
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568563843206816891, guid: 52b07c38abc38411c812239c06bc550e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6227756
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568563843206816891, guid: 52b07c38abc38411c812239c06bc550e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 32.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568563843206816891, guid: 52b07c38abc38411c812239c06bc550e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -16.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568563843206816891, guid: 52b07c38abc38411c812239c06bc550e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 77.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52b07c38abc38411c812239c06bc550e, type: 3}
