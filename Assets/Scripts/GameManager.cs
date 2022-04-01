@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     // [SerializeField] TextMeshProUGUI shoppingText;
     public static GameManager gameInstance;
     int scores;
-    [SerializeField] private int coins;
+    public int coins;
     public int highScores;
     [SerializeField] int publicScore;
     [SerializeField] float publicTimer;
@@ -28,6 +28,10 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         scores = 0;
+        if(coins <=0)
+        {
+            coins = 0;
+        }
 
         noMoney.SetActive(false);
 
@@ -40,7 +44,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator newCoin()
     {
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         noMoney.SetActive(false);
 
 
