@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityStandardAssets.CrossPlatformInput; 
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -18,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float horizontalSpeed = 3;
     private bool isGameStarted = false;
 
+    private float ScreenWidth;
  
     public static bool gameOver;
     public GameObject gameOverPanel;
@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody>();
 
         speeedMilestoneCount = speedIncreasesMileStones;
+
+        ScreenWidth = Screen.width;
     }
     // Update is called once per frame
     void Update()
@@ -71,6 +73,24 @@ public class PlayerMovement : MonoBehaviour
                 transform.Translate(Vector3.right * Time.deltaTime * speed);
             }
         }
+
+        int i = 0;
+		//loop over every touch found
+		while (i < Input.touchCount) {
+			if (Input.GetTouch (i).position.x > ScreenWidth / 2) {
+				 if (this.gameObject.transform.position.x < Boundary.BInstance.rightSide)
+                    {
+                       transform.Translate(Vector3.right * Time.deltaTime * speed);
+                    }
+			}
+			if (Input.GetTouch (i).position.x < ScreenWidth / 2) {
+				  if (this.gameObject.transform.position.x > Boundary.BInstance.leftSide)
+                     {
+                        transform.Translate(Vector3.left * Time.deltaTime * speed);
+                     }
+			}
+			++i;
+		}
     }
 
     public void OnCollisionEnter(Collision collision)

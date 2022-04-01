@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
 
         noMoney.SetActive(false);
 
-        scoreText.text = " " + scores + " m";
+        scoreText.text = " " + scores;
         coinText.text = " " + coins;
         timer = publicTimer;
         //   shoppingText.text = " " + coins;
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
             scores += publicScore;
 
 
-            scoreText.text = " " + scores + " m";
+            scoreText.text = " " + scores;
             // CheckHighScore();
 
             timer = publicTimer;
