@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     // [SerializeField] TextMeshProUGUI shoppingText;
     public static GameManager gameInstance;
     int scores;
-    public int coins;
+    public int coins =0;
     public int highScores;
     [SerializeField] int publicScore;
     [SerializeField] float publicTimer;
@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        
         scores = 0;
         if(coins <=0)
         {
@@ -76,6 +77,12 @@ public class GameManager : MonoBehaviour
 
 
     }
+    public int dCoins()
+    {
+
+        return coins = PlayerPrefs.GetInt(prefMoney);
+    }
+
 
     public void CheckHighScore()
     {

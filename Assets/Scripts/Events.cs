@@ -1,6 +1,6 @@
 ﻿using UnityEngine.SceneManagement;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Events : MonoBehaviour
 {
     public GameObject noMoney;
@@ -25,6 +25,6 @@ public class Events : MonoBehaviour
     // Update is called once per frame
     public void QuitGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 }

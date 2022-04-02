@@ -5,8 +5,8 @@ using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody body;
-    public float speed;
+    Rigidbody rigidbody;
+    /*public float speed;
 
     public float speedMultiplier;
     public float speedIncreasesMileStones;
@@ -107,5 +107,33 @@ public class PlayerMovement : MonoBehaviour
     {
         isGameStarted = true;
     }
+    */
 
+    public int Direction;
+
+    void Update()
+    {
+        Analyze();
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            print("left");
+            if (Direction == 0 || Direction == 1)
+            {
+                Direction--;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            print("right");
+            if (Direction == 0 || Direction == -1)
+            {
+                Direction++;
+            }
+        }
+    }
+
+    void Analyze()
+    {
+        transform.position = Vector3.Lerp(transform.position, new Vector3(0, 0, 3 * Direction), 0.1f);
+    }
 }
