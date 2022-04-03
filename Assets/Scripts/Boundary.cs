@@ -15,24 +15,6 @@ public class Boundary : MonoBehaviour
     {
         BInstance= this;
     }
-    public float BoundaryLeft()
-    {
-        int left = PlatformGenerator.pInstance.displayRandom;
-        Debug.Log(leftSide);
-        return leftSide = PlatformGenerator.pInstance.thePlatforms[left].transform.position.x;
-        
-
-       
-    }
-
-    public float BoundaryRight()
-    {
-
-        int right = PlatformGenerator.pInstance.displayRandom;
-        Debug.Log(rightSide);
-        return rightSide = PlatformGenerator.pInstance.thePlatforms[right].transform.position.x;
-       
-    }
 
     // Start is called before the first frame update
     void Start()
