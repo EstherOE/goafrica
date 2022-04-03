@@ -8,8 +8,8 @@ public class Boundary : MonoBehaviour
 
     public float leftSide = -11.17f;
     public  float rightSide = -3.49f;
-     float internalLeft;
-    float internalRight;
+    public float internalLeft;
+    public float internalRight;
 
     private void Awake()
     {

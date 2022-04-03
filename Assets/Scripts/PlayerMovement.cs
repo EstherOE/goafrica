@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
    
     void Movement()
     {
-        if (Input.GetKey(KeyCode.A) || (Input.GetKey(KeyCode.LeftArrow)))
+        if ((Input.GetKey(KeyCode.LeftArrow)))
         {
             if (this.gameObject.transform.position.x > Boundary.BInstance.leftSide)
             {
@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.D) || (Input.GetKey(KeyCode.RightArrow)))
+        if ((Input.GetKey(KeyCode.RightArrow)))
         {
             if (this.gameObject.transform.position.x < Boundary.BInstance.rightSide)
             {
