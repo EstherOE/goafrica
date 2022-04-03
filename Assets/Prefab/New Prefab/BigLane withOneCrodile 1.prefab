@@ -477,7 +477,7 @@ GameObject:
   - component: {fileID: 4538610957772908789}
   m_Layer: 0
   m_Name: BigLane withOneCrodile 1
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26511,6 +26511,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grass2 (99)
+      objectReference: {fileID: 0}
+    - target: {fileID: 629542536758182806, guid: 7ca2fa2809968cf47852232e5d4a6e43,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     - target: {fileID: 629542536758681526, guid: 7ca2fa2809968cf47852232e5d4a6e43,
         type: 3}
