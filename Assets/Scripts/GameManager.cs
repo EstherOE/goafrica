@@ -28,10 +28,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         scores = 0;
-        if(coins <=0)
-        {
-            coins = 0;
-        }
+        
 
         noMoney.SetActive(false);
 
@@ -55,6 +52,13 @@ public class GameManager : MonoBehaviour
     {
 
         DisplayTimer();
+
+    }
+
+    public void DisplayCoin(int dcoin)
+    {
+        coins = dcoin;
+        coinText.text = "" + coins;
 
     }
 
@@ -100,7 +104,7 @@ public class GameManager : MonoBehaviour
         //  shoppingText.text = " " + coins;
         if (coins <= 0)
         {
-            coins = 0;
+            
             noMoney.SetActive(true);
             StartCoroutine(newCoin());
             noMoney.SetActive(false);

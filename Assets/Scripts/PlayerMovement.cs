@@ -100,12 +100,10 @@ public class PlayerMovement : MonoBehaviour
            gameOver = true;
            Time.timeScale = 0;
            gameOverPanel.SetActive(true);
-        }
+            Destroy(collision.gameObject);
+            
     }
-
-    public void StartRunning()
-    {
-        isGameStarted = true;
+  
     }
 
 }
