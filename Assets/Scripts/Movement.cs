@@ -22,8 +22,6 @@ public class Movement : MonoBehaviour
     public static bool gameOver;
     public GameObject gameOverPanel;
 
-    private float ScreenWidth;
-
     void Start() 
     {
         gameOver = false;
@@ -32,20 +30,19 @@ public class Movement : MonoBehaviour
 
         charController = GetComponent<CharacterController>();
 
-        ScreenWidth = Screen.width;
     }
  
      void Update () {
  
          direction.z = forwardSpeed;
 
-         if (Input.GetKeyDown(KeyCode.RightArrow)) {
+         if (SwipeManager.swipeRight) {
              desireLane++;
              if(desireLane == 3)
                 desireLane = 2;
          }
  
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+        if (SwipeManager.swipeLeft) {
              desireLane--;
              if(desireLane == -1)
                 desireLane = 0;
@@ -64,21 +61,22 @@ public class Movement : MonoBehaviour
 
         transform.position = targetPosition;
 
-         int i = 0;
-		//loop over every touch found
-		while (i < Input.touchCount) {
-			if (Input.GetTouch (i).position.x > ScreenWidth / 2) {
-				 desireLane++;
-                 if(desireLane == 3)
-                 desireLane = 2;
-			}
-			if (Input.GetTouch (i).position.x < ScreenWidth / 2) {
-				   desireLane--;
-                   if(desireLane == -1)
-                   desireLane = 0;
-			}
-			++i;
-		}
+        
+        //  int i = 0;
+		// //loop over every touch found
+		// while (i < Input.touchCount) {
+		// 	if (Input.GetTouch (i).position.x > ScreenWidth / 3) {
+		// 		 desireLane++;
+        //          if(desireLane == 3)
+        //          desireLane = 2;
+		// 	}
+		// 	if (Input.GetTouch (i).position.x < ScreenWidth / 3) {
+		// 		   desireLane--;
+        //            if(desireLane == -1)
+        //            desireLane = 0;
+		// 	}
+		// 	++i;
+		// }
 
      }
 
