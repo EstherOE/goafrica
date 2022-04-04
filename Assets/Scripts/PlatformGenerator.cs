@@ -1,63 +1,44 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlatformGenerator : MonoBehaviour
 {
-    //   [SerializeField] GameObject  tilePrefab;
-    public Transform generatingposition;
-    public float distanceBetween;
+    [SerializeField] GameObject[] section;
+    public float zpos = -28.4f;
 
-
-    public float distanceBetweenMin, distanceBetweenMax;
-
-
-    public GameObject[] thePlatforms;
-    private int platformSelector;
-    private float[] platformWidths;
-    public static PlatformGenerator pInstance;
-    public int displayRandom;
-    private void Awake()
-    {
-        pInstance = this;
-    }
-
-
+    public bool creatingSection = false;
 
     private void Start()
     {
-
-        // platformWidth = tilePrefab.GetComponent<BoxCollider>().size.z;
-
-
-        platformWidths = new float[thePlatforms.Length];
-        for (int i = 0; i < thePlatforms.Length; i++)
-        {
-            platformWidths[i] = thePlatforms[i].GetComponent<BoxCollider>().size.y;
-        }
+        
     }
 
 
-
-
-
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (transform.position.x < generatingposition.position.z)
+        if(creatingSection== false)
+
         {
-            distanceBetween = Random.Range(distanceBetweenMin, distanceBetweenMax);
-            platformSelector = Random.Range(0, thePlatforms.Length);
-            displayRandom = platformSelector;
-            transform.position = new Vector3(transform.position.x, transform.position.y,
-                transform.position.z + platformWidths[platformSelector] + distanceBetween);
+            creatingSection = true;
 
-
-
-            Instantiate(thePlatforms[platformSelector], transform.position, transform.rotation);
+            //StartCourtine(GenearteSectio());
+            StartCoroutine(GenearteSectio());
         }
-
-        // Instantiate(tilePrefab, tposition.position, transform.rotation);
     }
+
+    public int newZpos;
+    public int sectNum;
+    private IEnumerator GenearteSectio()
+    {
+
+        sectNum = UnityEngine.Random.Range(0, section.Length);
+        Instantiate(section[sectNum], new Vector3(0, 0, zpos), Quaternion.identity);
+        zpos += newZpos ;
+
+        yield return new WaitForSeconds(0);
+        creatingSection = false;
+    }
+        
 }
