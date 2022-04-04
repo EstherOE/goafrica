@@ -4725,8 +4725,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   section:
   - {fileID: 9097106359401013265, guid: 31330f7706a4448c38306b8749fbb0a2, type: 3}
-  - {fileID: 9097106359401013265, guid: d71ef335fc8a5405fb5ca7372b65d7aa, type: 3}
-  - {fileID: 9097106359401013265, guid: 2d48bef6b16c14990936ac1257bf7ae9, type: 3}
+  - {fileID: 9097106359401013265, guid: 52a1df921dcf74e14b1b02d77abe4696, type: 3}
+  - {fileID: 9097106359401013265, guid: b6e509be8be294d92b3f7583c1b12dcf, type: 3}
+  - {fileID: 9097106359401013265, guid: faafe2ac504a14adf8ef02455e46dede, type: 3}
+  - {fileID: 9097106359401013265, guid: 40d22462a54eb4018a2e33db8cc469e5, type: 3}
+  - {fileID: 9097106359401013265, guid: ad83a4b0618d741779a62f887efdacb9, type: 3}
+  - {fileID: 9097106359401013265, guid: 28943b2e2d14c4ac9bd3a56738aa1e8b, type: 3}
+  - {fileID: 9097106359401013265, guid: 051fcfa307b32467b80b28c413240603, type: 3}
+  - {fileID: 9097106359401013265, guid: bc776dce9b32140a7b8307f0d32b6b82, type: 3}
+  - {fileID: 9097106359401013265, guid: 7350261a9bce349dfae8089f405c7e8c, type: 3}
   zpos: 30
   creatingSection: 0
   newZpos: 30
@@ -10721,6 +10728,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 16
+  speedMultiplier: 0
+  speedIncreasesMileStones: 0
+  horizontalSpeed: 3
   laneDistance: 8
   gameOverPanel: {fileID: 496241283}
 --- !u!143 &2139751798

@@ -9,6 +9,13 @@ public class Movement : MonoBehaviour
     private Vector3 direction;
     public float forwardSpeed;
 
+    
+    public float speedMultiplier;
+    public float speedIncreasesMileStones;
+    private float speeedMilestoneCount;
+
+    [SerializeField] float horizontalSpeed = 3;
+
     private int desireLane = 1;
     public float laneDistance;
 
@@ -78,6 +85,17 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         charController.Move(direction * Time.fixedDeltaTime);
+
+         if (transform.position.z > speeedMilestoneCount)
+        {
+
+            speeedMilestoneCount += speedIncreasesMileStones;
+            speedIncreasesMileStones = speedIncreasesMileStones * speedMultiplier;
+            horizontalSpeed = horizontalSpeed * speedMultiplier;
+
+        }
+
+        transform.Translate(Vector3.forward * Time.deltaTime * horizontalSpeed, Space.World);
     }
 
     public void OnCollisionEnter(Collision collision)
